@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering Blog — Leo Saputra | Senior Software Architect</title>
+  
+  <meta name="description" content="Technical articles on microservices architecture, Node.js performance, database indexing, and web application security by Leo Saputra." />
+  <meta property="og:title" content="Engineering Blog — Leo Saputra" />
+  <meta property="og:description" content="Deep dives into scalable architecture, distributed systems, and modern full-stack development." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon-DHdA0Glz.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main CSS -->
+  <script type="module" crossorigin src="./assets/app-C1uz2vZt.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/app-BwnqIrys.css">
+</head>
+<body>
+  <!-- Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">LS</div>
+        <span>Leo Saputra</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+          <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="blog.html" class="nav-link active">Blog</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Theme">
+          <i data-lucide="moon"></i>
+        </button>
+        <a href="index.html#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Blog Hero Header -->
+  <main class="container" style="padding-top: calc(var(--header-height) + 4rem); padding-bottom: 5rem;">
+    <div class="section-header" style="text-align: left; max-width: 100%; margin-bottom: 3rem;">
+      <span class="section-tag">
+        <i data-lucide="book-open"></i> Technical Publications
+      </span>
+      <h1 style="margin-top: 0.5rem;">Engineering Blog & Articles</h1>
+      <p style="font-size: 1.15rem; max-width: 700px;">
+        Insights on cloud-native distributed architecture, frontend rendering engine optimization, database tuning, and software craft.
+      </p>
+    </div>
+
+    <!-- Controls Bar -->
+    <div class="skills-controls">
+      <div class="projects-filter-bar" id="blog-category-filter" style="margin-bottom: 0;">
+        <button class="filter-btn active" data-category="All">All Topics</button>
+        <button class="filter-btn" data-category="Architecture">Architecture</button>
+        <button class="filter-btn" data-category="Frontend">Frontend</button>
+        <button class="filter-btn" data-category="Security">Security</button>
+        <button class="filter-btn" data-category="Database">Database</button>
+      </div>
+
+      <div class="search-box">
+        <i data-lucide="search" class="search-icon"></i>
+        <input type="text" id="blog-search-input" class="search-input" placeholder="Search articles or keywords..." />
+      </div>
+    </div>
+
+    <!-- Blog Posts Grid -->
+    <div class="blog-grid" id="blog-grid" style="margin-top: 2.5rem;">
+      <!-- Populated dynamically by blog.js -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Leo Saputra. All rights reserved. Designed & built with Pure HTML, CSS & Vanilla JS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Modules -->
+  <div id="scroll-progress"></div>
+  <button id="back-to-top" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+  <div id="cursor-glow" aria-hidden="true"></div>
+</body>
+</html>

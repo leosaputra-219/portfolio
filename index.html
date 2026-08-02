@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leo Saputra — Senior Full-Stack Engineer & Solutions Architect</title>
+
+  <meta name="description"
+    content="Official professional portfolio of Leo Saputra, Senior Full-Stack Engineer specializing in cloud architecture, TypeScript, React, Node.js, and high-concurrency microservices." />
+  <meta name="keywords"
+    content="Leo Saputra, Software Architect, Full Stack Developer, TypeScript, React, Node.js, AWS, Cloud Engineer, San Francisco, Portfolio" />
+  <meta name="author" content="Leo Saputra" />
+
+  <!-- Open Graph / Social Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alexrivera.dev/" />
+  <meta property="og:title" content="Leo Saputra — Senior Full-Stack Engineer & Solutions Architect" />
+  <meta property="og:description"
+    content="Explore technical experience, cloud-native projects, skills matrix, and engineering publications by Leo Saputra." />
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1200" />
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Leo Saputra — Senior Software Architect" />
+  <meta name="twitter:description"
+    content="Building resilient cloud-native applications, scalable microservices, and modern web experiences." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon-DHdA0Glz.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Web Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <script type="module" crossorigin src="./assets/app-C1uz2vZt.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/app-BwnqIrys.css">
+</head>
+
+<body>
+  <!-- Ambient Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <div class="brand-icon">LS</div>
+        <span>Leo Saputra</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certs" class="nav-link">Certificates</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <i data-lucide="moon"></i>
+        </button>
+        <button class="btn btn-outline btn-sm trigger-cv-modal">
+          <i data-lucide="file-text"></i> CV Preview
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open Mobile Navigation Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <div class="brand-logo">
+        <div class="brand-icon">LS</div>
+        <span>Leo Saputra</span>
+      </div>
+      <button class="mobile-menu-btn" id="close-drawer-btn" aria-label="Close Navigation Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Technical Skills</a></li>
+      <li><a href="#experience">Work Experience</a></li>
+      <li><a href="#projects">Project Portfolio</a></li>
+      <li><a href="#certs">Certificates</a></li>
+      <li><a href="#blog">Blog Articles</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li style="margin-top: 1rem;">
+        <button class="btn btn-primary trigger-cv-modal" style="width: 100%;">
+          <i data-lucide="download"></i> Download Resume
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-status-pill">
+          <span class="status-dot"></span>
+          <span>Available for Senior & Staff Roles</span>
+        </div>
+
+        <h1 class="hero-headline">
+          Building <span class="gradient-text">Cloud-Native</span> & Resilient Software Systems
+        </h1>
+
+        <div class="hero-typewriter">
+          <span id="hero-typed"></span><span class="typed-caret"></span>
+        </div>
+
+        <p class="hero-subtext">
+          Hi, I'm <strong>Leo Saputra</strong>. A Senior Full-Stack Engineer and Solutions Architect with 8+ years of
+          experience designing scalable microservices, intuitive web applications, and high-performance cloud
+          infrastructure.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <i data-lucide="layers"></i> Explore Projects
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i data-lucide="mail"></i> Get in Touch
+          </a>
+          <button class="btn btn-outline trigger-cv-modal">
+            <i data-lucide="download"></i> Download CV
+          </button>
+        </div>
+
+        <div class="hero-stats-row">
+          <div>
+            <div class="stat-item-number">8+</div>
+            <div class="stat-item-label">Years Experience</div>
+          </div>
+          <div>
+            <div class="stat-item-number">45+</div>
+            <div class="stat-item-label">Projects Delivered</div>
+          </div>
+          <div>
+            <div class="stat-item-number">99.99%</div>
+            <div class="stat-item-label">Platform Uptime</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-avatar-wrapper">
+        <div class="hero-avatar-card">
+          <img src="images/avatar7.jpg" alt="Leo Saputra - Senior Full Stack Engineer" class="hero-avatar-img" />
+
+          <div class="avatar-badge-floating avatar-badge-2">
+            <div class="badge-icon" style="background: var(--gradient-emerald);">
+              <i data-lucide="code-2"></i>
+            </div>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Specialty</div>
+              <div style="font-size: 0.9rem; font-weight: 700;">TypeScript & Distributed Systems</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Marquee -->
+  <div class="marquee" id="tech-marquee" aria-hidden="true">
+    <div class="marquee-track" id="tech-marquee-track"></div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i data-lucide="user"></i> Professional Profile</span>
+        <h2>Architecting Solutions for Impact</h2>
+        <p>Combining engineering discipline, modern web technologies, and strategic vision to solve complex digital
+          challenges.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-content-card">
+          <h3 style="margin-bottom: 1rem;" class="gradient-text">Biography & Background</h3>
+          <p style="margin-bottom: 1.25rem;">
+            Over the past 8 years, I have worked across the full technology stack—from low-latency Node.js & Go backend
+            microservices to responsive React single-page platforms and automated CI/CD DevOps workflows on AWS and
+            Google Cloud.
+          </p>
+          <p style="margin-bottom: 1.5rem;">
+            Currently leading cloud software architecture initiatives at <strong>Nexus Cloud Systems</strong>, where I
+            oversee platform modernization for enterprise SaaS clients processing millions of daily events.
+          </p>
+
+          <div
+            style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Location</div>
+              <div style="font-size: 0.95rem; font-weight: 600;">San Francisco, CA</div>
+            </div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Degree</div>
+              <div style="font-size: 0.95rem; font-weight: 600;">M.S. Computer Science</div>
+            </div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Primary Focus</div>
+              <div style="font-size: 0.95rem; font-weight: 600;">Full Stack & Cloud Architecture</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="margin-bottom: 1.5rem;">Core Engineering Values</h3>
+          <div class="value-cards-grid">
+            <div class="value-card">
+              <div class="value-card-icon"><i data-lucide="cpu"></i></div>
+              <h4>Clean Architecture</h4>
+              <p style="font-size: 0.88rem; margin-top: 0.35rem;">Writing maintainable, loosely-coupled systems designed
+                for graceful scale.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-card-icon"><i data-lucide="layout"></i></div>
+              <h4>User First</h4>
+              <p style="font-size: 0.88rem; margin-top: 0.35rem;">Bridging technical capability with user intent for
+                snappy, accessible UI.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-card-icon"><i data-lucide="shield-check"></i></div>
+              <h4>Security & Audit</h4>
+              <p style="font-size: 0.88rem; margin-top: 0.35rem;">Implementing zero-trust architecture, robust auth, and
+                observability.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-card-icon"><i data-lucide="book-open"></i></div>
+              <h4>Mentorship</h4>
+              <p style="font-size: 0.88rem; margin-top: 0.35rem;">Fostering inclusive technical growth through code
+                reviews and documentation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i data-lucide="terminal"></i> Technical Competencies</span>
+        <h2>Categorized Skills & Expertise</h2>
+        <p>A comprehensive overview of programming languages, frameworks, cloud tooling, and databases I utilize daily.
+        </p>
+      </div>
+
+      <div class="skills-categories-grid" id="skills-categories-grid">
+        <!-- Rendered dynamically by experience.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Timeline Section -->
+  <section id="experience" class="section-padding" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i data-lucide="briefcase"></i> Career Journey</span>
+        <h2>Work Experience & Impact</h2>
+        <p>Detailed history of roles, key engineering achievements, and technical contributions.</p>
+      </div>
+
+      <div class="timeline" id="experience-timeline">
+        <!-- Rendered dynamically by experience.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Gallery Section -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i data-lucide="layers"></i> Portfolio Gallery</span>
+        <h2>Featured Projects & Case Studies</h2>
+        <p>Explore production applications, open-source utilities, and full-stack software architectures.</p>
+      </div>
+
+      <div class="skills-controls">
+        <div class="projects-filter-bar" id="projects-filter-bar">
+          <button class="filter-btn active" data-category="All">All Projects</button>
+          <button class="filter-btn" data-category="Full Stack">Full Stack</button>
+          <button class="filter-btn" data-category="Cloud & AI">Cloud & AI</button>
+          <button class="filter-btn" data-category="Enterprise">Enterprise</button>
+          <button class="filter-btn" data-category="Mobile">Mobile</button>
+        </div>
+
+        <div class="search-box">
+          <i data-lucide="search" class="search-icon"></i>
+          <input type="text" id="project-search-input" class="search-input"
+            placeholder="Search projects by tech or name..." />
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Rendered dynamically by projects.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certs" class="section-padding" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i data-lucide="award"></i> Verified Credentials</span>
+        <h2>Certifications & Specializations</h2>
+        <p>Industry-recognized professional credentials in cloud engineering, Kubernetes, and software leadership.</p>
+      </div>
+
+      <div class="certs-grid" id="certs-grid">
+        <!-- Rendered dynamically by experience.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Education History Section -->
+  <section id="education" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i data-lucide="graduation-cap"></i> Academic Background</span>
+        <h2>Education & Background</h2>
+      </div>
+
+      <div class="timeline" id="education-grid" style="max-width: 800px;">
+        <!-- Rendered dynamically by experience.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Articles Section -->
+  <section id="blog" class="section-padding" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i data-lucide="book-open"></i> Writing & Insights</span>
+        <h2>Latest Technical Articles</h2>
+        <p>Deep-dive publications on software architecture, resilience, and modern JavaScript performance.</p>
+      </div>
+
+      <div class="blog-grid" id="blog-grid">
+        <!-- Rendered dynamically by blog.js -->
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="blog.html" class="btn btn-outline">
+          View All Blog Posts <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i data-lucide="message-square"></i> Recommendations</span>
+        <h2>What Colleagues & Leaders Say</h2>
+      </div>
+
+      <div id="testimonials-container" class="testimonials-slider">
+        <!-- Rendered dynamically by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i data-lucide="mail"></i> Let's Connect</span>
+        <h2>Get in Touch</h2>
+        <p>Interested in collaborating, hiring for a senior/architect role, or discussing a technical project? Send a
+          message below.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3 style="margin-bottom: 1.5rem;" class="gradient-text">Contact Information</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon-box"><i data-lucide="mail"></i></div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Email Address</div>
+              <a href="mailto:leosaputra21903023@gmail.com"
+                style="font-weight: 600; color: var(--text-primary);">leosaputra21903023@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-box"><i data-lucide="phone"></i></div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Phone / Signal</div>
+              <div style="font-weight: 600;">+62 821 5892 0618</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-box"><i data-lucide="map-pin"></i></div>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Location</div>
+              <div style="font-weight: 600;">Tarakan, Kalimantan Utara</div>
+            </div>
+          </div>
+
+          <h4 style="margin: 2rem 0 1rem 0;">Connect on Social</h4>
+          <div class="footer-socials">
+            <a href="https://github.com/alexrivera-dev" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" aria-label="GitHub Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/alexrivera-architect" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" aria-label="LinkedIn Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
+              </svg>
+            </a>
+            <a href="https://twitter.com/alexrivera_code" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" aria-label="Twitter Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="https://codepen.io/alexrivera" target="_blank" rel="noopener noreferrer"
+              class="social-icon-btn" aria-label="CodePen Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M12 0l10.727 6.21v11.58L12 24 1.273 17.79V6.21L12 0zm0 4.06L4.52 8.06l2.568 1.5L12 11.56l4.912-2 2.568-1.5L12 4.06zM5.458 12.25L3.9 13.06v3.68l5.464 3.16 2.636-1.54v-4.38L5.458 12.25zm13.084 0l-6.542 3.98v4.38l2.636 1.54 5.464-3.16v-3.68l-1.558-.8zM19.23 10.52l-1.568-.9-2.68-1.55-2.982 1.82 3.63 2.21 3.6-1.58zM7.018 8.07l-2.68 1.55-1.568.9 1.63 1.06 3.63 1.58 3.63-2.21-2.982-1.82z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Full Name *</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Jane Doe" required />
+              <div class="form-error-text" id="name-error"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address *</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="jane@example.com" required />
+              <div class="form-error-text" id="email-error"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject *</label>
+              <input type="text" id="contact-subject" class="form-control"
+                placeholder="Senior Role Opportunity / Architectural Consultation" required />
+              <div class="form-error-text" id="subject-error"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Your Message *</label>
+              <textarea id="contact-message" class="form-control" rows="5"
+                placeholder="Tell me about your team, platform requirements, or project details..." required></textarea>
+              <div class="form-error-text" id="message-error"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i data-lucide="send"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#home" class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="brand-icon">LS</div>
+            <span>Leo Saputra</span>
+          </a>
+          <p style="font-size: 0.92rem; max-width: 380px;">
+            Senior Full-Stack Engineer and Software Architect crafting reliable distributed platforms, performant web
+            interfaces, and cloud native systems.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: 1rem;">Quick Links</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem;">
+            <li><a href="#about" style="color: var(--text-secondary);">About Profile</a></li>
+            <li><a href="#skills" style="color: var(--text-secondary);">Skills Matrix</a></li>
+            <li><a href="#experience" style="color: var(--text-secondary);">Work Experience</a></li>
+            <li><a href="#projects" style="color: var(--text-secondary);">Projects Gallery</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="margin-bottom: 1rem;">Resources</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem;">
+            <li><a href="blog.html" style="color: var(--text-secondary);">Engineering Blog</a></li>
+            <li><a href="#" class="trigger-cv-modal" style="color: var(--text-secondary);">Curriculum Vitae</a></li>
+            <li><a href="sitemap.xml" style="color: var(--text-secondary);">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Leo Saputra. All rights reserved. Built with Pure HTML5, Modern CSS3, and Vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Modules -->
+  <div id="scroll-progress"></div>
+  <button id="back-to-top" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+  <div id="cursor-glow" aria-hidden="true"></div>
+</body>
+
+</html>
